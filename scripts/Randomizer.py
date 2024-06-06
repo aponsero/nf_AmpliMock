@@ -42,9 +42,4 @@ def main():
 
     SeqIO.write(fasta_selection, outfile, "fasta")
 
-    with open("subset_taxonomy.csv", 'w') as fp:
-        fp.write("Domain;Proteobacteria;Class;Order;Family;Genus\n")
-        for item in taxonomy_selection:
-            fp.write("%s\n" % item)
-
 if __name__ == "__main__":main()
