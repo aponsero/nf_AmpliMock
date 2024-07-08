@@ -3,17 +3,6 @@
  * This pipeline is used for generating mock amplicon sequencing data.
  */
 
-/* Pipeline input parameters */
-params.database = "$projectDir/databases/silva_nr99_v138.1_train_set.fa"
-params.nbtax = 10
-params.outdir = "results"
-params.nbmock = 3
-params.fwd = "GTGCCAGCMGCCGCGGTAA"
-params.rev = "GGACTACHVGGGTWTCTAAT"
-params.model = "NovaSeq"
-params.seqdepth = 20000
-params.distrib = "lognormal"
-
 log.info """\
     A M P L I M O C K - N F   P I P E L I N E
     ===================================

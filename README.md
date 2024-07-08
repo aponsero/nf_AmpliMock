@@ -16,12 +16,12 @@ The pipeline consists of three main processes:
 
 To run the Amplimock-NF pipeline, you need to have the following software installed:
 
-- Nextflow v XX
+- Nextflow v23.10.1
 - Python 3
-	- Biopython v XXX
-	- numpy v XXX
-- CRABS v XX
-- INSILICOSEQ vXX
+	- Biopython v1.83
+	- numpy v1.26.4
+- CRABS v0.1.1-0
+- INSILICOSEQ v2.0.1-0
 
 Additionally, you need to have a reference database (e.g., SILVA) for generating the mock profiles.
 
@@ -47,7 +47,7 @@ conda install -c conda-forge biopython
 After executing these commands, you should have a conda environment named `amplimock-env` with Nextflow, NumPy, and Biopython installed. To verify the installations, you can run the following commands after activating the environment:
 
 ```
-nextflow --version
+nextflow -version
 python -c "import numpy; print(numpy.__version__)"
 python -c "import Bio; print(Bio.__version__)"
 ```
