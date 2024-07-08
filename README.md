@@ -23,7 +23,8 @@ To run the Amplimock-NF pipeline, you need to have the following software instal
 - CRABS v0.1.1-0
 - INSILICOSEQ v2.0.1-0
 
-Additionally, you need to have a reference database (e.g., SILVA) for generating the mock profiles.
+Additionally, you need to have a reference database (e.g., SILVA) for generating the mock profiles. 
+Below are the instruction to download the SILVA v138 and the RDP vXXX using the dada2 formated databases.
 
 ## Installation
 
@@ -61,8 +62,18 @@ These commands should print the version information for Nextflow, NumPy, and Bio
 git clone git@github.com:aponsero/nf_AmpliMock.git
 ```
 
-2. Download a reference amplicon database (e.g SILVA, or RefSeq amplicon datasets). The format should be a single fasta file with taxonomy ID or taxonomy name as sequence header.
+2. Download a reference amplicon database (e.g SILVA, or RefSeq amplicon datasets). The format should be a single fasta file with taxonomy ID or taxonomy name as sequence header. The (dada2 references databases)[https://benjjneb.github.io/dada2/training.html] are formated in this manner and can therefore be directly used by this pipeline:
 
+```
+mkdir databases
+cd databases
+# download SILVA v138
+wget https://zenodo.org/records/4587955/files/silva_nr99_v138.1_train_set.fa.gz
+gunzip silva_nr99_v138.1_train_set.fa.gz
+# Download RDP v18
+wget https://zenodo.org/records/4310151/files/rdp_train_set_18.fa.gz
+gunzip rdp_train_set_18.fa.gz
+```
 
 ## Usage
 
