@@ -23,8 +23,7 @@ To run the Amplimock-NF pipeline, you need to have the following software instal
 - CRABS v0.1.1-0
 - INSILICOSEQ v2.0.1-0
 
-Additionally, you need to have a reference database (e.g., SILVA) for generating the mock profiles. 
-Below are the instruction to download the SILVA v138 and the RDP vXXX using the dada2 formated databases.
+Additionally, you need to have a reference database (e.g., SILVA) for generating the mock profiles. Below are provided the instruction to download the SILVA v138 and the RDP v18 using the dada2 formated databases.
 
 ## Installation
 
