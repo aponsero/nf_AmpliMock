@@ -12,7 +12,7 @@ The pipeline consists of three main processes:
 
 3. **INSILICO**: This process runs INSILICOSEQ to simulate amplicon sequencing data. It takes the amplicon sequences from the previous step and generates mock sequencing reads with user-specified parameters, such as sequencing depth, error model, and abundance distribution.
 
-```
+```mermaid
 flowchart LR
     A[16S Database 
     & parameters] -->|Randomizer.py| B(Mock community 
